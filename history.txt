@@ -1,0 +1,14 @@
+  177  ssh -i ~/.ssh/id_rsa -T git@github.com
+  178  git clone git@github.com:Garkain1/git_new_repo.git
+  179  cd git_new_repo/
+  180  git branch feature
+  181  git checkout feature
+  182  vi .gitignore 
+  183  nano README.md 
+  184  git add .
+  185  git commit -m "modified files .gitignore and README.md"
+  186  git push -u origin feature
+  187  git commit --amend
+  188  git checkout main
+  189  git merge feature
+  190  history | tail -14 >> history.txt
